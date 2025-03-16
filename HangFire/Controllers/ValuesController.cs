@@ -11,7 +11,7 @@ public class ValuesController : ControllerBase
     public IActionResult Get()
     {
         BackgroundJob.Enqueue(() => BackgroundTestService.Test());
-        return Ok("hangifre çalıştı");
+        return Ok("hangfire çalıştı");
     }
 }
 
